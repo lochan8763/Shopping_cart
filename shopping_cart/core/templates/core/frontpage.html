@@ -1,0 +1,9 @@
+<h1>FRONT PAGE</h1>
+{% for field in prod%}
+{{field.name}}
+{% if field.image %}
+<div>
+    <img src="{{field.image.url}}" alt="{{field.name}}">
+</div>
+{% endif %}
+{% endfor %}
